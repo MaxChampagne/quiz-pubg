@@ -25,7 +25,7 @@ export class Quiz {
         this.objJSONQuiz = objJSON;
 
 
-        $('.divBtnJs').append('<button id=\'validerReponse\' name=\'validerChoix\'>Valider ma réponse</button>');
+        $('.divBtnJs').append('<button id=\'validerReponse\' name=\'validerChoix\' tabindex="20">Valider ma réponse</button>');
         this.btnValiderReponse = $('#validerReponse');
 
         // $('#Q1').hide();
@@ -134,9 +134,9 @@ export class Quiz {
         $('#pointage').hide();
         if(num == 1){
             $('#sectionResultat').append('' +
-                '<h2 class="animated tada">Voici votre résultat!</h2>' +
-                '<h3 class="animated tada">Vous avez réussi \' + this.pointage +  \' sur 3 questions</h3>' +
-                '<div class="animated infinite tada">' +
+                '<h2 class="animated tada" tabindex="2">Voici votre résultat!</h2>' +
+                '<h3 class="animated tada" tabindex="3">Vous avez réussi \' + this.pointage +  \' sur 3 questions</h3>' +
+                '<div class="animated infinite tada" tabindex="4">' +
                 '<img class="img_table winner" ' +
                 '     src="assets/images/img_question/winner_w500.png" ' +
                 '     alt="Le poulet de la victoire!"> ' +
@@ -144,13 +144,13 @@ export class Quiz {
                 '     src="assets/images/img_question/winner_w250.png" ' +
                 '     alt="Le poulet de la victoire!"> ' +
                 '</div>' +
-                '<p class="animated tada">' + this.messageResultat + '</p>'
+                '<p class="animated tada" tabindex="5">' + this.messageResultat + '</p>'
             );
         }else{
             $('#sectionResultat').append('' +
-                '<h2 class="animated jackInTheBox">Voici votre résultat!</h2>' +
-                '<h3 class="animated jackInTheBox">Vous avez réussi ' + this.pointage +  ' sur 3 questions!</h3>' +
-                '<p class="animated jackInTheBox">' + this.messageResultat + '</p>'
+                '<h2 class="animated jackInTheBox" tabindex="2">Voici votre résultat!</h2>' +
+                '<h3 class="animated jackInTheBox" tabindex="3">Vous avez réussi ' + this.pointage +  ' sur 3 questions!</h3>' +
+                '<p class="animated jackInTheBox" tabindex="4">' + this.messageResultat + '</p>'
             );
         }
 
