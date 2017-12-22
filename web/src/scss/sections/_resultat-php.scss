@@ -1,0 +1,79 @@
+#resultatPhp{
+/*********************************************************************************************************************
+         Resultat
+**********************************************************************************************************************/
+  h2{
+
+  }
+  .img_question, .img_table, input{
+    display: none;
+  }
+  section{
+    width: span(8 of 10);
+    margin: 0 auto;
+    fieldset{
+      margin: 0 auto;
+      border: none;
+      .img{
+        text-align: center;
+        margin: 10px auto;
+        width: max-content;
+        position: relative;
+        border-radius: 10px;
+        border: 8px solid $bonneReponse;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        //box-shadow: 0px 0px 3px $primaire inset;
+        legend{
+          position: absolute;
+          padding: 5px 0;
+          top: 88%;
+          width: 102%;
+          background-color: $bonneReponse;
+        }
+      }
+    }
+  }
+  p:last-child{
+    margin-top: 30px ;
+    text-align: center;
+    a{
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 10px;
+      color: $hyperlienHover;
+      border: 5px solid $hyperlienHover ;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      background-color: $accent;
+    }
+  }
+
+/*************************************************************
+       Quiz Table
+**************************************************************/
+  @media (min-width: $tablettePortrait) {
+    .winner img{
+      margin: 0 auto;
+    }
+    .img_mobile{
+      display: none;
+    }
+    .img_table{
+      display: block;
+    }
+    section{
+      fieldset{
+
+        .img{
+          img{
+            margin-bottom: 20px;
+          }
+          legend{
+            top: 78%;
+          }
+        }
+      }
+    }
+
+  }
+}
+

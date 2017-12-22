@@ -1,0 +1,221 @@
+#main{
+/*******************************************************************************************************************
+          Index
+********************************************************************************************************************/
+  h2{
+    text-align: center;
+    margin-bottom: 0;
+  }
+  p{
+    margin: 0 10px;
+    text-align: center;
+  }
+  p:last-child{
+    margin-top: 30px ;
+    a{
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 10px;
+      color: $hyperlienHover;
+      border: 5px solid $hyperlienHover ;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      background-color: $accent;
+    }
+  }
+/*************************************************************
+       Index Table
+**************************************************************/
+  @media (min-width: $tablettePortrait){
+    p{
+      width: span(6 of 10);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p:last-child{
+      a{
+        color: $hyperlien;
+        border: 5px solid $hyperlien;
+        background-color: $hyperlienHover;
+      }
+      a:hover{
+        color: $hyperlienHover;
+        border: 5px solid $hyperlienHover ;
+        background-color: $accent;
+        transition: color 300ms;
+        transition-timing-function: ease;
+      }
+    }
+  }
+
+/*********************************************************************************************************************
+         Quiz
+**********************************************************************************************************************/
+  h3{
+    margin-left: 10px;
+  }
+  .img_question{
+    display: none;
+  }
+  #validerQuiz{
+    padding: 10px;
+    color: $primaire;
+    background-color: transparent;
+    border: 5px solid $primaire ;
+    border-radius: 10px;
+  }
+  .divBtn, .divBtnJs{
+    margin-top: 30px;
+    text-align: center;
+    button{
+      padding: 10px;
+      color: $primaire;
+      border: 5px solid $primaire ;
+      border-radius: 10px;
+      background-color: $accent;
+      text-shadow: 0 0 5px $accent;
+    }
+    button:disabled{
+      color: $primaireDisabled;
+      border: 5px solid $primaireDisabled ;
+    }
+  }
+  div{
+    text-align: center;
+  }
+  .winner{
+    margin-top: 10px;
+  }
+  .img_table, input{
+     display: none;
+   }
+  fieldset{
+    border: none;
+    ul{
+      padding-left: 0;
+      list-style: none;
+      li{
+        div{
+          margin: 10px auto;
+          width: max-content;
+          text-align: center;
+          position: relative;
+          border-radius: 10px;
+          border: 8px solid $primaire;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+          //box-shadow: 0px 0px 3px $primaire inset;
+          legend{
+            position: absolute;
+            padding: 5px 0;
+            top: 88%;
+            width: 102%;
+            background-color: $primaire;
+          }
+        }
+        input:checked + label > div{
+          border: 8px solid $bonneReponse;
+          legend{
+            background-color: $bonneReponse;
+          }
+        }
+      }
+    }
+    .bonneReponse{
+      border: 8px solid $bonneReponse;
+      legend{
+        background-color: $bonneReponse;
+      }
+    }
+    .mauvaiseReponse{
+      border: 8px solid $mauvaiseReponse;
+      legend{
+        background-color: $mauvaiseReponse;
+      }
+    }
+  }
+/*************************************************************
+       Quiz Table
+**************************************************************/
+  @media (min-width: $tablettePortrait) {
+    #noQuestion, #pointage{
+      text-align: left;
+      margin-left: 12%;
+    }
+    .entete_question{
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-flow: wrap;
+      .img_question{
+        width: span(3 of 10);
+        margin-left: 11% ;
+        display: block;
+        border: 8px solid $primaire;
+        border-radius: 10px ;
+        background-color: $accent;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      }
+      .question_demander{
+        width: span(5 of 10);
+        margin-left: 20px;
+        margin-top: 60px;
+       }
+    }
+    .winner{
+      margin-left: 25%;
+    }
+    #validerQuiz{
+      color: $hyperlien;
+      border: 5px solid $hyperlien;
+    }
+    #validerQuiz:hover{
+      color: $hyperlienHover;
+      border: 5px solid $hyperlienHover ;
+      transition: color 300ms;
+      transition-timing-function: ease;
+    }
+    .img_mobile{
+      display: none;
+    }
+    .img_table{
+      display: block;
+      margin-bottom: 20px;
+    }
+    fieldset{
+      #contenuInteractifQ1, #contenuInteractifQ2, #contenuInteractifQ3{
+        text-align: left;
+        margin-left: 11%;
+        .explication, h3{
+          margin-left: 0;
+          text-align: left;
+          width: 100%;
+        }
+        .explication{
+          margin-top: 5px;
+        }
+      }
+      ul{
+        position: relative;
+        display: flex;
+        flex-flow: wrap;
+        li{
+          width: span(5 of 10);
+          div{
+            legend{
+              top: 76%;
+            }
+          }
+        }
+      }
+    }
+
+    #sectionResultat{
+      text-align: center;
+      div, h3{
+        text-align: center;
+      }
+      p{
+        margin-top: 20px;
+      }
+    }
+  }
+}

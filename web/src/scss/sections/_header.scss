@@ -1,0 +1,66 @@
+#header{
+  height: 26%;
+  .titre_table, .titre_table ~ span, #img_header_table{
+    display: none;
+  }
+  h2{
+    margin-bottom: 10px;
+  }
+  .titre_mobile{
+    a{
+      text-decoration: none;
+      color: $primaire;
+      text-shadow: 0 0 5px #000;
+    }
+    text-decoration: none;
+    color: $primaire;
+    position: relative;
+    top: -140px;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  #img_header_mobile{
+    width: 100%;
+  }
+
+  @media (min-width: $tablettePortrait) {
+    .titre_table, .titre_table ~ span, #img_header_table{
+      display: block;
+    }
+    .img{
+      position: relative;
+    }
+    .titre_table, .titre_table ~ span{
+      position: absolute;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .titre_table{
+      a{
+        text-decoration: none;
+        color: $primaire;
+        text-shadow: 0 0 5px #000;
+      }
+      a:hover{
+        color: $secondaire;
+        transition: color 300ms;
+        transition-timing-function: ease;
+      }
+      top: 0;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+    .titre_table ~ span{
+      top: 70px;
+      margin-left: 20px;
+      text-shadow: 0 0 5px #000;
+    }
+    span{
+      color: $secondaire;
+    }
+    .titre_mobile, #img_header_mobile{
+      display: none;
+    }
+  }
+}

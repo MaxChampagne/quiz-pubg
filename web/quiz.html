@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/app-icones/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/app-icones/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/app-icones/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/app-icones/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/app-icones/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/app-icones/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/app-icones/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/app-icones/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/app-icones/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-36x36.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-48x48.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-256x256.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/app-icones/android-icon-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/app-icones/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/app-icones/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/app-icones/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/app-icones/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <title>Quiz Pubg - résulats</title>
+  <title>PlayerUnkown’s Battleground Quiz</title>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+</head>
+
+<body>
+<!--Lien rapide à ajouter-->
+<header id="header" class="conteneur" role="banner ">
+  <img id="img_header_mobile"
+       srcset="assets/images/img_header/map_header_w320.png 1x,
+               assets/images/img_header/map_header_w640.png 2x"
+       src="assets/images/img_header/map_header_w320.png"
+       alt="La carte du jeu,">
+  <img id="img_header_table"
+       srcset="assets/images/img_header/map_header_w1000.png 1x,
+               assets/images/img_header/map_header_w2000.png 2x"
+       src="assets/images/img_header/map_header_w1000.png"
+       alt="La carte du jeu,">
+  <h1 class="titre_mobile">Pubg Quiz</h1>
+  <h1 class="titre_table"><a href="index.html">PlayerUnkowns Battleground Quiz</a></h1>
+  <span>Un contre tous et tous contre un!</span>
+</header>
+
+<main id="main" class="conteneur">
+  <h2 id="noQuestion"></h2>
+  <h2 id="pointage"></h2>
+  <form name="fQuizAWD" action="resultats.php" role="form" method="get">
+    <section id="Q1">
+      <fieldset >
+        <div class="entete_question animated zoomIn entete1">
+          <img class="img_question"
+               srcset="assets/images/img_question/pistol_toon_400.png 1x,
+                           assets/images/img_question/pistol_toon_800.png 2x"
+               src="assets/images/img_question/pistol_toon_400.png"
+               alt="Personage type de Pubg">
+          <h3 class="question_demander">Dans les choix de réponses suivants, lequel de ces fusils peut être trouver
+          lorsqu’il se fait parachuter dans une boite rouge?</h3>
+        </div>
+        <ul class="choixReponses">
+          <li class="animated zoomIn q1a">
+            <input id="Q1A" class='question1Radio' type="radio" name="Q1" value="1">
+            <label for="Q1A">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/awm_w250.png 1x,
+                           assets/images/arme_table/awm_w500.png 2x"
+                     src="assets/images/arme_table/awm_w250.png"
+                     alt="L'arme de précision AWM">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/awm.png"
+                     alt="L'arme de précision AWM">
+                <legend>AWM</legend>
+              </div>
+            </label>
+          </li>
+
+          <li class="animated zoomIn q1b">
+            <input id="Q1B" class='question1Radio' type="radio" name="Q1" value="2">
+            <label for="Q1B">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/sks_w250.png 1x,
+                           assets/images/arme_table/sks_w500.png 2x"
+                     src="assets/images/arme_table/sks_w250.png"
+                     alt="L'arme de précision SKS">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/sks.png"
+                     alt="L'arme de précision SKS">
+                <legend>SKS</legend>
+              </div>
+            </label>
+          </li>
+
+          <li class="animated zoomIn q1c">
+            <input id="Q1C" class='question1Radio' type="radio" name="Q1" value="3">
+            <label for="Q1C">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/vss_w250.png 1x,
+                           assets/images/arme_table/vss_w500.png 2x"
+                     src="assets/images/arme_table/vss_w250.png"
+                     alt="L'arme de précision VSS">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/vss.png"
+                     alt="L'arme de précision VSS">
+                <legend>VSS</legend>
+              </div>
+            </label>
+          </li>
+
+          <li class="animated zoomIn q1d">
+            <input id="Q1D" class='question1Radio' type="radio" name="Q1" value="4">
+            <label for="Q1D">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/kar98k_w250.png 1x,
+                           assets/images/arme_table/kar98k_w500.png 2x"
+                     src="assets/images/arme_table/kar98k_w250.png"
+                     alt="L'arme de précision KAR98K">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/kar98k.png"
+                     alt="L'arme de précision KAR98K">
+                <legend>KAR98K</legend>
+              </div>
+            </label>
+          </li>
+        </ul>
+        <div id="contenuInteractifQ1">
+          <!--Ajouter ici avec JavaScript, la rétroaction, l'explication et la progression du quiz.-->
+        </div>
+      </fieldset>
+    </section>
+    <section id="Q2">
+      <fieldset>
+        <div class="entete_question animated zoomInLeft entete2">
+          <img class="img_question"
+               srcset="assets/images/img_question/ar_toon_400.png 1x,
+                       assets/images/img_question/ar_toon_800.png 2x"
+               src="assets/images/img_question/ar_toon_400.png"
+               alt="Personage type de Pubg">
+          <h3 class="question_demander">Dans les choix de réponses suivants, lequel de ces fusils peut avoir le plus
+          d’emplacements de modification?</h3>
+        </div>
+        <ul class="choixReponses">
+          <li class="animated zoomInLeft q2a">
+            <input id="Q2A" class='question2Radio' type="radio" name="Q2" value="1">
+            <label for="Q2A">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/groza_w250.png 1x,
+                           assets/images/arme_table/groza_w500.png 2x"
+                     src="assets/images/arme_table/groza_w250.png"
+                     alt="L'arme de précision GROZA">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/groza.png"
+                     alt="L'arme de précision GROZA">
+                <legend>GROZA</legend>
+              </div>
+            </label>
+          </li>
+          <li class="animated zoomInLeft q2b">
+            <input id="Q2B" class='question2Radio' type="radio" name="Q2" value="2">
+            <label for="Q2B">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/m16a4_w250.png 1x,
+                           assets/images/arme_table/m16a4_w500.png 2x"
+                     src="assets/images/arme_table/m16a4_w250.png"
+                     alt="L'arme de précision M16A4">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/m16a4.png"
+                     alt="L'arme de précision M16A4">
+                <legend>M16A4</legend>
+              </div>
+            </label>
+          </li>
+          <li class="animated zoomInLeft q2c">
+            <input id="Q2C" class='question2Radio' type="radio" name="Q2" value="3">
+            <label for="Q2C">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/m416_w250.png 1x,
+                           assets/images/arme_table/m416_w500.png 2x"
+                     src="assets/images/arme_table/m416_w250.png"
+                     alt="L'arme de précision M416">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/m416.png"
+                     alt="L'arme de précision M416">
+                <legend>M416</legend>
+              </div>
+            </label>
+          </li>
+          <li class="animated zoomInLeft q2d">
+            <input id="Q2D" class='question2Radio' type="radio" name="Q2" value="4">
+            <label for="Q2D">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/scar-l_w250.png 1x,
+                             assets/images/arme_table/scar-l_w500.png 2x"
+                     src="assets/images/arme_table/scar-l_w250.png"
+                     alt="L'arme de précision SCAR-L">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/scar-l.png"
+                     alt="L'arme de précision SCAR-L">
+                <legend>SCAR-L</legend>
+              </div>
+            </label>
+          </li>
+        </ul>
+        <div id="contenuInteractifQ2">
+        <!--Ajouter ici avec JavaScript, la rétroaction, l'explication et la progression du quiz.-->
+        </div>
+      </fieldset>
+    </section>
+    <section id="Q3" >
+      <fieldset>
+        <div class="entete_question animated zoomInUp entete3">
+          <img class="img_question"
+               srcset="assets/images/img_question/smg_toon_w400.png 1x,
+                       assets/images/img_question/smg_toon_w800.png 2x"
+               src="assets/images/img_question/smg_toon_w400.png"
+               alt="Personage type de Pubg">
+          <h3 class="question_demander">Dans les choix de réponses suivants, lequel de ces fusils a été instaurer en dernier
+            dans le jeu?</h3>
+        </div>
+        <ul class="choixReponses">
+          <li class="animated zoomInUp q3a">
+            <input id="Q3A" class='question3Radio' type="radio" name="Q3" value=1">
+            <label for="Q3A">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/micro_uzi_w250.png 1x,
+                             assets/images/arme_table/micro_uzi_w500.png 2x"
+                     src="assets/images/arme_table/micro_uzi_w250.png"
+                     alt="L'arme de précision MICRO UZI">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/micro_uzi.png"
+                     alt="L'arme de précision MICRO UZI">
+                <legend>MICRO UZI</legend>
+              </div>
+            </label>
+          </li>
+          <li class="animated zoomInUp q3b">
+            <input id="Q3B" class='question3Radio' type="radio" name="Q3" value="2">
+            <label for="Q3B">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/tommy_gun_w250.png 1x,
+                             assets/images/arme_table/tommy_gun_w500.png 2x"
+                     src="assets/images/arme_table/tommy_gun_w250.png"
+                     alt="L'arme de précision TOMMY GUN">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/tommy_gun.png"
+                     alt="L'arme de précision TOMMY GUN">
+                <legend>TOMMY GUN</legend>
+              </div>
+            </label>
+          </li>
+          <li class="animated zoomInUp q3c">
+            <input id="Q3C" class='question3Radio' type="radio" name="Q3" value="3">
+            <label for="Q3C">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/ump9_w250.png 1x,
+                             assets/images/arme_table/ump9_w500.png 2x"
+                     src="assets/images/arme_table/ump9_w250.png"
+                     alt="L'arme de précision UMP9">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/ump9.png"
+                     alt="L'arme de précision UMP9">
+                <legend>UMP9</legend>
+              </div>
+            </label>
+          </li>
+          <li class="animated zoomInUp q3d">
+            <input id="Q3D" class='question3Radio' type="radio" name="Q3" value="4">
+            <label for="Q3D">
+              <div>
+                <img class="img_table"
+                     srcset="assets/images/arme_table/vector_w250.png 1x,
+                           assets/images/arme_table/vector_w500.png 2x"
+                     src="assets/images/arme_table/vector_w250.png"
+                     alt="L'arme de précision VECTOR">
+                <img class="img_mobile"
+                     src="assets/images/arme_mobile/vector.png"
+                     alt="L'arme de précision VECTOR">
+                <legend>VECTOR</legend>
+              </div>
+            </label>
+          </li>
+        </ul>
+        <div id="contenuInteractifQ3">
+          <!--Ajouter ici avec JavaScript, la rétroaction, l'explication et la progression du quiz.-->
+        </div>
+      </fieldset>
+    </section>
+    <section id="sectionResultat">
+    </section>
+    <div class="divBtn">
+      <button id='validerQuiz' class="animated infinite pulse" name='validerQuiz'>Valider mes choix</button>
+    </div>
+
+  </form>
+  <div class="divBtnJs">
+
+  </div>
+</main>
+
+<footer id="footer" class="conteneur" role="contentinfo">
+  <small>Maxime Champagne, © droits d'auteur sur le matériel utilisé, 2017</small>
+</footer>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script>
+<script> window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js">\x3C/script>')</script>
+<script src="bower_components/picturefill/dist/picturefill.min.js" async></script>
+<script src="bower_components/requirejs/require.js" data-main="assets/js/main.js"></script>
+<!--<script src="script.js"></script>-->
+<script>
+    // Let's register our serviceworker
+    navigator.serviceWorker.register('sw.js', {
+        // The scope cannot be parent to the script url
+        scope: './'
+    });
+</script>
+<script src="logging.js"></script>
+</body>
+</html>

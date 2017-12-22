@@ -1,0 +1,15 @@
+# fichiers cachés ou temporaires de Mac OS
+.DS_Store
+~*
+Icon?
+# dossier de réglages de PHPStorm
+.idea/
+node_modules/
+vendor/
+.env
+# dossier de cache de sass
+.sass-cache/
+web/bower_components/animate.css/
+web/bower_components/normalize-scss/
+web/bower_components/susy/
+

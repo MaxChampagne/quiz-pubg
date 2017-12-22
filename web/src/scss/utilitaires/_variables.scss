@@ -1,0 +1,51 @@
+/**
+ * @author
+ * @todo Personnaliser les variables
+**/
+
+/** Polices de caractères **/
+//$fonteTitres: Arial;
+
+/** Palette de couleurs **/
+// Utiliser http://chir.ag/projects/name-that-color pour obtenir
+// des noms uniques et mémorisables
+// Permettez-vous d'utiliser un nom de variable plus explicite si la suggestion de name-that-color est trop bizarre
+//$primaire: #EEE8D9;
+//$primaireFonce: #D3CFC5;
+//$primaireHeader: rgba(238, 232, 217, 0.75);
+//$secondaire: #909688;
+//$secondaireFonce:#7B7F75;
+//$accent: rgba(153, 102, 153, 0.8);
+//$accentFonce: #70486D;
+$primaire: #ed9027;
+$primaireDisabled: rgba(237, 144, 39, 0.5);
+$secondaire: #f1f1f1;
+$accent: #262626;
+$bonneReponse: #4caf4f;
+$mauvaiseReponse: #c63030;
+
+$noir: #000;
+
+//$dominante: ;
+$texte: $noir;
+
+$hyperlien: $accent;
+$hyperlienHover: $primaire;
+
+//$button: ;
+//$action: #C16B2C;
+//$actionHover: #A05828;
+
+/** Points de rupture **/
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+$mobilePortrait : 321px;
+/* smartphones, Android phones, landscape iPhone */
+$mobilePaysage : 480px;
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+$tablettePortrait : 600px;
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+$tablettePaysage : 801px;
+/* big landscape tablets, laptops, and desktops */
+$desktop : 1025px;
+/* hi-res laptops and desktops */
+$desktopLarge : 1281px;

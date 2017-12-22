@@ -1,0 +1,23 @@
+{
+  "retroactions": {
+    "positive": "Bonne réponse!",
+    "negative": "Mauvaise réponse!"
+  },
+  "explications": {
+    "Q1": "L’arme de précision AWM est la seule qui s’obtient grâce aux boites qui se font parachuter, tandis que les autres armes, sks, vss, kar98k peuvent se trouver n’importe où.",
+    "Q2": "L’arme ayant le plus d’emplacement est le M416 avec 5 emplacement tandis que M16A4 en possède 3, le SCAR-L en possède 4 et le GROZA en possède 3.",
+    "Q3": "La dernière arme à avoir été intégrer dans le jeu avec la mise à jour de Septembre 2017 est le tommy gun. Les trois autres armes sont dans le jeu depuis la sortie de la version beta."
+  },
+  "bonnesReponses": {
+    "R1": "1",
+    "R2": "3",
+    "R3": "2"
+  },
+  "messages": {
+    "repondue": "Valider mon choix",
+    "pasDeReponse": "Veuillez d'abord choisir une réponse!",
+    "pointage": "Votre position sur trois : ",
+    "resultatsDebut": "Vous avez vaincu",
+    "resultatsFin": " % des questions!"
+  }
+}

@@ -1,0 +1,66 @@
+/**
+ * @author
+ * @todo Compléter la table des matières et lier les modules
+**/
+
+/**
+ * ------------------
+ * TABLE DES MATIÈRES
+ * ------------------
+ * LIB
+ ** Normalize
+ * Utilitaires
+ ** variables
+ ** mixins
+ * BASE
+ ** Typographie
+ ** Form
+ * STYLES
+ ** Règles générales
+ ** Entete
+ ** Barre de progression d'étapes
+ ** ...
+ */
+
+
+
+/**** LIB (Bibliothèques) ****/
+
+@import "../../bower_components/normalize-scss/sass/normalize/import-now";
+@import "../../bower_components/susy/sass/susy";
+@import "../../bower_components/susy/sass/plugins/svg-grid";
+
+/**** utilitaires ****/
+@import "utilitaires/variables";
+@import "utilitaires/mixins";
+
+/**** base (typo) ****/
+@import "base/typo";
+
+/**** sections ****/
+@import "sections/header";
+@import "sections/footer";
+@import "sections/main";
+@import "sections/body";
+@import "sections/resultat-php";
+
+/* Règles générales */
+@include border-box-sizing;
+
+/**** MISE EN PAGE SUSY ****/
+/**/
+$susy: (
+        'columns': susy-repeat(12),
+        'gutters': 0.25,
+        'spread': 'narrow',
+        'container-spread': 'narrow'
+);
+
+
+.conteneur {
+  max-width:1000px;
+  margin:0 auto;
+  //background: susy-svg-grid(10) no-repeat scroll;
+  // Pratique d'ajouter à la classe wrap le mixin clearfix
+  @include clearfix;
+}
