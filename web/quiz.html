@@ -36,7 +36,7 @@
 
 <body>
 <!--Lien rapide à ajouter-->
-<header id="header" class="conteneur" role="banner ">
+<header id="header" class="conteneur" role="banner">
   <img id="img_header_mobile"
        srcset="assets/images/img_header/map_header_w320.png 1x,
                assets/images/img_header/map_header_w640.png 2x"
@@ -52,26 +52,26 @@
   <span>Un contre tous et tous contre un!</span>
 </header>
 
-<main id="main" class="conteneur">
+<main id="main" class="conteneur" role="main">
   <h2 id="noQuestion" class="animated flipInX"></h2>
   <h2 id="pointage" class="animated flipInX"></h2>
   <form name="fQuizAWD" action="resultats.php" role="form" method="get">
-    <section id="Q1">
-      <fieldset >
+    <section id="Q1" >
+      <fieldset role="article">
         <div class="entete_question animated bounceInLeft">
           <img class="img_question"
                srcset="assets/images/img_question/pistol_toon_400.png 1x,
                            assets/images/img_question/pistol_toon_800.png 2x"
                src="assets/images/img_question/pistol_toon_400.png"
                alt="Personage type de Pubg">
-          <h3 class="question_demander">Dans les choix de réponses suivants, lequel de ces fusils peut être trouver
+          <h3 class="question_demander" tabindex="1">Dans les choix de réponses suivants, lequel de ces fusils peut être trouver
           lorsqu’il se fait parachuter dans une boite rouge?</h3>
         </div>
         <ul class="choixReponses">
           <li class="animated bounceInUp">
             <input id="Q1A" class='question1Radio' type="radio" name="Q1" value="1">
             <label for="Q1A">
-              <div>
+              <div tabindex="2">
                 <img class="img_table"
                      srcset="assets/images/arme_table/awm_w250.png 1x,
                            assets/images/arme_table/awm_w500.png 2x"
@@ -88,7 +88,7 @@
           <li class="animated bounceInUp">
             <input id="Q1B" class='question1Radio' type="radio" name="Q1" value="2">
             <label for="Q1B">
-              <div>
+              <div tabindex="3">
                 <img class="img_table"
                      srcset="assets/images/arme_table/sks_w250.png 1x,
                            assets/images/arme_table/sks_w500.png 2x"
@@ -105,7 +105,7 @@
           <li class="animated bounceInUp">
             <input id="Q1C" class='question1Radio' type="radio" name="Q1" value="3">
             <label for="Q1C">
-              <div>
+              <div tabindex="4">
                 <img class="img_table"
                      srcset="assets/images/arme_table/vss_w250.png 1x,
                            assets/images/arme_table/vss_w500.png 2x"
@@ -122,7 +122,7 @@
           <li class="animated bounceInUp">
             <input id="Q1D" class='question1Radio' type="radio" name="Q1" value="4">
             <label for="Q1D">
-              <div>
+              <div tabindex="5">
                 <img class="img_table"
                      srcset="assets/images/arme_table/kar98k_w250.png 1x,
                            assets/images/arme_table/kar98k_w500.png 2x"
@@ -149,14 +149,14 @@
                        assets/images/img_question/ar_toon_800.png 2x"
                src="assets/images/img_question/ar_toon_400.png"
                alt="Personage type de Pubg">
-          <h3 class="question_demander">Dans les choix de réponses suivants, lequel de ces fusils peut avoir le plus
+          <h3 class="question_demander" tabindex="6">Dans les choix de réponses suivants, lequel de ces fusils peut avoir le plus
           d’emplacements de modification?</h3>
         </div>
         <ul class="choixReponses">
           <li class="animated bounceInUp">
             <input id="Q2A" class='question2Radio' type="radio" name="Q2" value="1">
             <label for="Q2A">
-              <div>
+              <div tabindex="7">
                 <img class="img_table"
                      srcset="assets/images/arme_table/groza_w250.png 1x,
                            assets/images/arme_table/groza_w500.png 2x"
@@ -172,7 +172,7 @@
           <li class="animated bounceInUp">
             <input id="Q2B" class='question2Radio' type="radio" name="Q2" value="2">
             <label for="Q2B">
-              <div>
+              <div tabindex="8">
                 <img class="img_table"
                      srcset="assets/images/arme_table/m16a4_w250.png 1x,
                            assets/images/arme_table/m16a4_w500.png 2x"
@@ -188,7 +188,7 @@
           <li class="animated bounceInUp">
             <input id="Q2C" class='question2Radio' type="radio" name="Q2" value="3">
             <label for="Q2C">
-              <div>
+              <div tabindex="9">
                 <img class="img_table"
                      srcset="assets/images/arme_table/m416_w250.png 1x,
                            assets/images/arme_table/m416_w500.png 2x"
@@ -204,7 +204,7 @@
           <li class="animated bounceInUp">
             <input id="Q2D" class='question2Radio' type="radio" name="Q2" value="4">
             <label for="Q2D">
-              <div>
+              <div tabindex="10">
                 <img class="img_table"
                      srcset="assets/images/arme_table/scar-l_w250.png 1x,
                              assets/images/arme_table/scar-l_w500.png 2x"
@@ -231,14 +231,14 @@
                        assets/images/img_question/smg_toon_w800.png 2x"
                src="assets/images/img_question/smg_toon_w400.png"
                alt="Personage type de Pubg">
-          <h3 class="question_demander">Dans les choix de réponses suivants, lequel de ces fusils a été instaurer en dernier
+          <h3 class="question_demander" tabindex="11">Dans les choix de réponses suivants, lequel de ces fusils a été instaurer en dernier
             dans le jeu?</h3>
         </div>
         <ul class="choixReponses">
           <li class="animated bounceInUp">
             <input id="Q3A" class='question3Radio' type="radio" name="Q3" value=1">
             <label for="Q3A">
-              <div>
+              <div tabindex="12">
                 <img class="img_table"
                      srcset="assets/images/arme_table/micro_uzi_w250.png 1x,
                              assets/images/arme_table/micro_uzi_w500.png 2x"
@@ -254,7 +254,7 @@
           <li class="animated bounceInUp">
             <input id="Q3B" class='question3Radio' type="radio" name="Q3" value="2">
             <label for="Q3B">
-              <div>
+              <div tabindex="13">
                 <img class="img_table"
                      srcset="assets/images/arme_table/tommy_gun_w250.png 1x,
                              assets/images/arme_table/tommy_gun_w500.png 2x"
@@ -270,7 +270,7 @@
           <li class="animated bounceInUp">
             <input id="Q3C" class='question3Radio' type="radio" name="Q3" value="3">
             <label for="Q3C">
-              <div>
+              <div tabindex="14">
                 <img class="img_table"
                      srcset="assets/images/arme_table/ump9_w250.png 1x,
                              assets/images/arme_table/ump9_w500.png 2x"
@@ -286,7 +286,7 @@
           <li class="animated bounceInUp">
             <input id="Q3D" class='question3Radio' type="radio" name="Q3" value="4">
             <label for="Q3D">
-              <div>
+              <div tabindex="15">
                 <img class="img_table"
                      srcset="assets/images/arme_table/vector_w250.png 1x,
                            assets/images/arme_table/vector_w500.png 2x"
